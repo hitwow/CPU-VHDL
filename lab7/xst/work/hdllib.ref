@@ -1,0 +1,14 @@
+EN ifblock NULL C:/lab7/ifblock.vhd sub00/vhpl02 1386051220
+AR stctrblock behavioral C:/lab7/stctrblock.vhd sub00/vhpl09 1386051229
+AR stblock behavioral C:/lab7/stblock.vhd sub00/vhpl07 1386051225
+AR cpuall behavioral C:/lab7/cpuall.vhd sub00/vhpl13 1386051231
+EN stctrblock NULL C:/lab7/stctrblock.vhd sub00/vhpl08 1386051228
+EN stblock NULL C:/lab7/stblock.vhd sub00/vhpl06 1386051224
+EN clkblock NULL C:/lab7/clkblock.vhd sub00/vhpl00 1386051218
+AR rewblock behavioral C:/lab7/rewblock.vhd sub00/vhpl11 1386051227
+AR ifblock behavioral C:/lab7/ifblock.vhd sub00/vhpl03 1386051221
+EN cpuall NULL C:/lab7/cpuall.vhd sub00/vhpl12 1386051230
+AR clkblock behavioral C:/lab7/clkblock.vhd sub00/vhpl01 1386051219
+AR alublock behavioral C:/lab7/alublock.vhd sub00/vhpl05 1386051223
+EN alublock NULL C:/lab7/alublock.vhd sub00/vhpl04 1386051222
+EN rewblock NULL C:/lab7/rewblock.vhd sub00/vhpl10 1386051226

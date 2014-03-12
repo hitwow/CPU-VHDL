@@ -1,0 +1,3 @@
+MODULE w_rewblock
+SUBMODULE rewblock
+INSTANCE UUT

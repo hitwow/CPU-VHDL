@@ -1,0 +1,7 @@
+vhdl work "stctrblock.vhd"
+vhdl work "stblock.vhd"
+vhdl work "rewblock.vhd"
+vhdl work "ifblock.vhd"
+vhdl work "clkblock.vhd"
+vhdl work "alublock.vhd"
+vhdl work "cpuall.vhd"

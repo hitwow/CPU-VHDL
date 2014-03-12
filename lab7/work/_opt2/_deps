@@ -1,0 +1,8 @@
+H 2141964 10 3 0 2 2 0 0 0 0
+L 4 ieee 19 $MODEL_TECH/../ieee
+L 3 std 18 $MODEL_TECH/../std
+L 4 work 4 work
+D 27 work.stctrblock(behavioral) dVSY1GzzF^LZ8FMB4]3@K2 0 1
+D 33 work.w_stctrblock(testbench_arch) mSHnd_lDfddBN2Ii`mo8V3 1 1
+2 0  0 bm807^HbgBBVJQMjH:@zm2 1 1 1
+2 0  0 mG]Y40Y99jCKd8=jG4`jW1 0 0 1

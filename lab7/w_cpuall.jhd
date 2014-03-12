@@ -1,0 +1,3 @@
+MODULE w_cpuall
+SUBMODULE cpuall
+INSTANCE UUT

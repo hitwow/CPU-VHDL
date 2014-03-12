@@ -1,0 +1,8 @@
+H 2141964 10 3 0 2 2 0 0 0 0
+L 4 ieee 19 $MODEL_TECH/../ieee
+L 3 std 18 $MODEL_TECH/../std
+L 4 work 4 work
+D 25 work.alublock(behavioral) :OV8f>ZS=Cb6b<jReIG372 0 1
+D 31 work.w_alublock(testbench_arch) L>h0h:EC:_MP_TBfCM23`3 1 1
+2 0  0 B6]oa^7kWG0cNzdTVP`4[1 0 0 1
+2 0  0 KTe:j3E=O?R4iMY@aF>DJ3 1 1 1

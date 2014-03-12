@@ -1,0 +1,20 @@
+H 2141964 10 3 0 8 8 0 0 0 0
+L 4 ieee 19 $MODEL_TECH/../ieee
+L 3 std 18 $MODEL_TECH/../std
+L 4 work 4 work
+D 25 work.alublock(behavioral) hUgA0;L[c[LD<3IVazml>0 2 1
+D 25 work.clkblock(behavioral) `3840LK35@Yi@AkdBL`mR3 0 1
+D 23 work.cpuall(behavioral) H>EOTB`7d5zCl0G]<QFAA2 6 1
+D 24 work.ifblock(behavioral) ;<W<eC<=Ad1f;DSZ@;fEj3 1 1
+D 25 work.rewblock(behavioral) 0=G9jnGCTgQAA@W<z@P_A1 4 1
+D 24 work.stblock(behavioral) Mao[P]b43=h97C@U69WOe3 3 1
+D 27 work.stctrblock(behavioral) dVSY1GzzF^LZ8FMB4]3@K2 5 1
+D 29 work.w_cpuall(testbench_arch) 4=??F5;k]>;=zOFm0:H3=2 7 1
+2 0  0 V9icTSBEneh`Kd60>SBf[0 4 4 1
+2 0  0 `Z97ZFcODzlZFGQBXJ04?3 1 1 1
+2 0  0 FLYhPNEdgoXQejYN:Bcni3 3 3 1
+2 0  0 mG]Y40Y99jCKd8=jG4`jW1 5 5 1
+2 0  0 doRojH93zN[Phf:Pa]UGb3 6 6 1
+2 0  0 OkBDR`n82ThD^hn=NT5k`3 0 0 1
+2 0  0 m@MB__oC`f3z0bL=SN<732 2 2 1
+2 0  0 DjzNU>NgWehXgQnDhi;;L2 7 7 1

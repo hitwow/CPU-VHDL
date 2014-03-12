@@ -1,0 +1,3 @@
+MODULE w_stctrblock
+SUBMODULE stctrblock
+INSTANCE UUT

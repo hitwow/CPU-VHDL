@@ -1,0 +1,336 @@
+--------------------------------------------------------------------------------
+Release 9.1i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx91i\bin\nt\trce.exe -ise C:/Xilinx91i/lab7/lab7.ise -intstyle ise -e 3
+-s 4 -xml rewblock rewblock.ncd -o rewblock.twr rewblock.pcf
+
+Design file:              rewblock.ncd
+Physical constraint file: rewblock.pcf
+Device,package,speed:     xc3s500e,pq208,-4 (PRODUCTION 1.26 2006-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock c4
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+AD_O<0>     |    0.934(F)|    0.460(F)|c4_BUFGP          |   0.000|
+AD_O<1>     |    2.154(F)|   -0.516(F)|c4_BUFGP          |   0.000|
+AD_O<2>     |    0.836(F)|    0.537(F)|c4_BUFGP          |   0.000|
+AD_O<3>     |    1.517(F)|   -0.008(F)|c4_BUFGP          |   0.000|
+AD_O<4>     |    0.384(F)|    0.909(F)|c4_BUFGP          |   0.000|
+AD_O<5>     |    2.235(F)|   -0.572(F)|c4_BUFGP          |   0.000|
+AD_O<6>     |    0.601(F)|    0.730(F)|c4_BUFGP          |   0.000|
+AD_O<7>     |    0.652(F)|    0.689(F)|c4_BUFGP          |   0.000|
+AD_O<8>     |    0.748(F)|    0.613(F)|c4_BUFGP          |   0.000|
+AD_O<9>     |    1.174(F)|    0.275(F)|c4_BUFGP          |   0.000|
+AD_O<10>    |    0.745(F)|    0.615(F)|c4_BUFGP          |   0.000|
+AD_O<11>    |    0.388(F)|    0.901(F)|c4_BUFGP          |   0.000|
+AD_O<12>    |    1.310(F)|    0.153(F)|c4_BUFGP          |   0.000|
+AD_O<13>    |    1.725(F)|   -0.179(F)|c4_BUFGP          |   0.000|
+AD_O<14>    |    1.694(F)|   -0.146(F)|c4_BUFGP          |   0.000|
+AD_O<15>    |    1.189(F)|    0.258(F)|c4_BUFGP          |   0.000|
+IR_O<8>     |    2.040(F)|   -0.412(F)|c4_BUFGP          |   0.000|
+IR_O<9>     |    1.844(F)|   -0.263(F)|c4_BUFGP          |   0.000|
+IR_O<10>    |    0.848(F)|    0.540(F)|c4_BUFGP          |   0.000|
+Reg_O<0>    |    1.419(F)|    0.072(F)|c4_BUFGP          |   0.000|
+Reg_O<1>    |    0.918(F)|    0.482(F)|c4_BUFGP          |   0.000|
+Reg_O<2>    |    1.011(F)|    0.406(F)|c4_BUFGP          |   0.000|
+Reg_O<3>    |    3.514(F)|   -1.592(F)|c4_BUFGP          |   0.000|
+Reg_O<4>    |    1.365(F)|    0.116(F)|c4_BUFGP          |   0.000|
+Reg_O<5>    |    1.332(F)|    0.146(F)|c4_BUFGP          |   0.000|
+Reg_O<6>    |    2.611(F)|   -0.875(F)|c4_BUFGP          |   0.000|
+Reg_O<7>    |    0.981(F)|    0.432(F)|c4_BUFGP          |   0.000|
+aluout<0>   |    2.875(F)|   -1.092(F)|c4_BUFGP          |   0.000|
+aluout<1>   |    1.301(F)|    0.176(F)|c4_BUFGP          |   0.000|
+aluout<2>   |    1.624(F)|   -0.084(F)|c4_BUFGP          |   0.000|
+aluout<3>   |    0.998(F)|    0.421(F)|c4_BUFGP          |   0.000|
+aluout<4>   |    1.345(F)|    0.132(F)|c4_BUFGP          |   0.000|
+aluout<5>   |    1.192(F)|    0.258(F)|c4_BUFGP          |   0.000|
+aluout<6>   |    1.655(F)|   -0.110(F)|c4_BUFGP          |   0.000|
+aluout<7>   |    1.050(F)|    0.377(F)|c4_BUFGP          |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Cy to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   10.070(F)|PC_C_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock IR_O<11> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   10.621(F)|PC_C_not0001      |   0.000|
+Reg_C       |   10.364(F)|Reg_C_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock IR_O<12> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   12.256(F)|PC_C_not0001      |   0.000|
+Reg_C       |   11.253(F)|Reg_C_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock IR_O<13> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |    8.767(F)|PC_C_not0001      |   0.000|
+Reg_C       |   10.337(F)|Reg_C_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock IR_O<14> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   10.567(F)|PC_C_not0001      |   0.000|
+Reg_C       |    9.985(F)|Reg_C_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock IR_O<15> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   10.232(F)|PC_C_not0001      |   0.000|
+Reg_C       |   10.780(F)|Reg_C_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock Z to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   10.342(F)|PC_C_not0001      |   0.000|
+------------+------------+------------------+--------+
+
+Clock c4 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   11.207(F)|PC_C_not0001      |   0.000|
+PC_I<0>     |    8.034(F)|c4_BUFGP          |   0.000|
+PC_I<1>     |    8.053(F)|c4_BUFGP          |   0.000|
+PC_I<2>     |    7.948(F)|c4_BUFGP          |   0.000|
+PC_I<3>     |    7.932(F)|c4_BUFGP          |   0.000|
+PC_I<4>     |    7.538(F)|c4_BUFGP          |   0.000|
+PC_I<5>     |    7.806(F)|c4_BUFGP          |   0.000|
+PC_I<6>     |    8.270(F)|c4_BUFGP          |   0.000|
+PC_I<7>     |    7.974(F)|c4_BUFGP          |   0.000|
+PC_I<8>     |    7.312(F)|c4_BUFGP          |   0.000|
+PC_I<9>     |    8.832(F)|c4_BUFGP          |   0.000|
+PC_I<10>    |    8.204(F)|c4_BUFGP          |   0.000|
+PC_I<11>    |    7.525(F)|c4_BUFGP          |   0.000|
+PC_I<12>    |    8.965(F)|c4_BUFGP          |   0.000|
+PC_I<13>    |    8.314(F)|c4_BUFGP          |   0.000|
+PC_I<14>    |    7.958(F)|c4_BUFGP          |   0.000|
+PC_I<15>    |    8.461(F)|c4_BUFGP          |   0.000|
+Reg_C       |    8.584(F)|Reg_C_not0001     |   0.000|
+Reg_I<0>    |    8.055(F)|c4_BUFGP          |   0.000|
+Reg_I<1>    |    7.359(F)|c4_BUFGP          |   0.000|
+Reg_I<2>    |    7.894(F)|c4_BUFGP          |   0.000|
+Reg_I<3>    |    7.421(F)|c4_BUFGP          |   0.000|
+Reg_I<4>    |    8.898(F)|c4_BUFGP          |   0.000|
+Reg_I<5>    |    7.793(F)|c4_BUFGP          |   0.000|
+Reg_I<6>    |    8.502(F)|c4_BUFGP          |   0.000|
+Reg_I<7>    |    7.362(F)|c4_BUFGP          |   0.000|
+Reg_N<0>    |    7.609(F)|c4_BUFGP          |   0.000|
+Reg_N<1>    |    9.425(F)|c4_BUFGP          |   0.000|
+Reg_N<2>    |    7.370(F)|c4_BUFGP          |   0.000|
+------------+------------+------------------+--------+
+
+Clock reset to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PC_C        |   10.350(F)|PC_C_not0001      |   0.000|
+Reg_C       |   10.622(F)|Reg_C_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Cy
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    1.861|    1.861|
+IR_O<11>       |         |         |    2.576|    2.576|
+IR_O<12>       |         |         |    2.296|    2.296|
+IR_O<13>       |         |         |    2.740|    2.740|
+IR_O<14>       |         |         |    2.563|    2.563|
+IR_O<15>       |         |         |    1.944|    1.944|
+Z              |         |         |    2.529|    2.529|
+c4             |         |         |    2.146|    2.146|
+reset          |         |         |    2.053|    2.053|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IR_O<11>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    1.450|    1.450|
+IR_O<11>       |         |         |    2.330|    2.330|
+IR_O<12>       |         |         |    3.219|    3.219|
+IR_O<13>       |         |         |    2.329|    2.329|
+IR_O<14>       |         |         |    2.152|    2.152|
+IR_O<15>       |         |         |    2.696|    2.696|
+Z              |         |         |    2.118|    2.118|
+c4             |         |         |    1.735|    1.735|
+reset          |         |         |    2.390|    2.390|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IR_O<12>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    0.137|    0.137|
+IR_O<11>       |         |         |    1.619|    1.619|
+IR_O<12>       |         |         |    2.508|    2.508|
+IR_O<13>       |         |         |    1.592|    1.592|
+IR_O<14>       |         |         |    1.240|    1.240|
+IR_O<15>       |         |         |    1.985|    1.985|
+Z              |         |         |    0.805|    0.805|
+c4             |         |         |    0.422|    0.422|
+reset          |         |         |    1.679|    1.679|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IR_O<13>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    2.901|    2.901|
+IR_O<11>       |         |         |    3.616|    3.616|
+IR_O<12>       |         |         |    3.336|    3.336|
+IR_O<13>       |         |         |    3.780|    3.780|
+IR_O<14>       |         |         |    3.603|    3.603|
+IR_O<15>       |         |         |    2.984|    2.984|
+Z              |         |         |    3.569|    3.569|
+c4             |         |         |    3.186|    3.186|
+reset          |         |         |    3.093|    3.093|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IR_O<14>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    1.480|    1.480|
+IR_O<11>       |         |         |    2.634|    2.634|
+IR_O<12>       |         |         |    3.523|    3.523|
+IR_O<13>       |         |         |    2.607|    2.607|
+IR_O<14>       |         |         |    2.255|    2.255|
+IR_O<15>       |         |         |    3.000|    3.000|
+Z              |         |         |    2.148|    2.148|
+c4             |         |         |    1.765|    1.765|
+reset          |         |         |    2.694|    2.694|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IR_O<15>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    1.728|    1.728|
+IR_O<11>       |         |         |    2.443|    2.443|
+IR_O<12>       |         |         |    2.887|    2.887|
+IR_O<13>       |         |         |    2.607|    2.607|
+IR_O<14>       |         |         |    2.430|    2.430|
+IR_O<15>       |         |         |    2.364|    2.364|
+Z              |         |         |    2.396|    2.396|
+c4             |         |         |    2.013|    2.013|
+reset          |         |         |    2.058|    2.058|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Z
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    1.641|    1.641|
+IR_O<11>       |         |         |    2.356|    2.356|
+IR_O<12>       |         |         |    2.076|    2.076|
+IR_O<13>       |         |         |    2.520|    2.520|
+IR_O<14>       |         |         |    2.343|    2.343|
+IR_O<15>       |         |         |    1.724|    1.724|
+Z              |         |         |    2.309|    2.309|
+c4             |         |         |    1.926|    1.926|
+reset          |         |         |    1.833|    1.833|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c4
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    7.916|    7.916|
+IR_O<11>       |         |         |    8.854|    8.854|
+IR_O<12>       |         |         |    9.187|    9.187|
+IR_O<13>       |         |         |    8.573|    8.573|
+IR_O<14>       |         |         |    8.263|    8.263|
+IR_O<15>       |         |         |    9.694|    9.694|
+Z              |         |         |    8.090|    8.090|
+c4             |         |         |    1.935|    2.296|
+reset          |         |         |    3.755|    3.755|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Cy             |         |         |    1.634|    1.634|
+IR_O<11>       |         |         |    2.349|    2.349|
+IR_O<12>       |         |         |    3.013|    3.013|
+IR_O<13>       |         |         |    2.513|    2.513|
+IR_O<14>       |         |         |    2.336|    2.336|
+IR_O<15>       |         |         |    2.490|    2.490|
+Z              |         |         |    2.302|    2.302|
+c4             |         |         |    1.919|    1.919|
+reset          |         |         |    2.184|    2.184|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Nov 25 10:16:39 2013
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 131 MB
+
+
+

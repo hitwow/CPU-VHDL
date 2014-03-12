@@ -1,0 +1,253 @@
+--------------------------------------------------------------------------------
+Release 9.1i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx91i\bin\nt\trce.exe -ise C:/Xilinx91i/lab7/lab7.ise -intstyle ise -e 3
+-s 4 -xml stctrblock stctrblock.ncd -o stctrblock.twr stctrblock.pcf
+
+Design file:              stctrblock.ncd
+Physical constraint file: stctrblock.pcf
+Device,package,speed:     xc3s500e,pq208,-4 (PRODUCTION 1.26 2006-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock IR_R
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+DBUS<0>     |    2.920(R)|   -1.000(R)|IR_R_BUFGP        |   0.000|
+            |    2.920(F)|   -1.000(F)|IR_R_BUFGP        |   0.000|
+DBUS<1>     |    3.965(R)|   -0.520(R)|IR_R_BUFGP        |   0.000|
+            |    0.103(F)|    1.253(F)|IR_R_BUFGP        |   0.000|
+DBUS<2>     |    3.943(R)|   -0.494(R)|IR_R_BUFGP        |   0.000|
+            |   -0.183(F)|    1.483(F)|IR_R_BUFGP        |   0.000|
+DBUS<3>     |    3.962(R)|   -0.517(R)|IR_R_BUFGP        |   0.000|
+            |   -0.121(F)|    1.426(F)|IR_R_BUFGP        |   0.000|
+DBUS<4>     |    3.959(R)|   -0.513(R)|IR_R_BUFGP        |   0.000|
+            |   -0.124(F)|    1.432(F)|IR_R_BUFGP        |   0.000|
+DBUS<5>     |    3.942(R)|   -0.493(R)|IR_R_BUFGP        |   0.000|
+            |   -0.141(F)|    1.450(F)|IR_R_BUFGP        |   0.000|
+DBUS<6>     |    3.958(R)|   -0.512(R)|IR_R_BUFGP        |   0.000|
+            |    0.173(F)|    1.188(F)|IR_R_BUFGP        |   0.000|
+DBUS<7>     |    3.961(R)|   -0.516(R)|IR_R_BUFGP        |   0.000|
+            |    2.695(F)|   -0.827(F)|IR_R_BUFGP        |   0.000|
+DBUS<8>     |    3.954(F)|   -0.507(F)|IR_R_BUFGP        |   0.000|
+DBUS<9>     |    3.955(F)|   -0.509(F)|IR_R_BUFGP        |   0.000|
+DBUS<10>    |    3.971(F)|   -0.527(F)|IR_R_BUFGP        |   0.000|
+DBUS<11>    |    3.964(F)|   -0.519(F)|IR_R_BUFGP        |   0.000|
+DBUS<12>    |    3.983(F)|   -0.541(F)|IR_R_BUFGP        |   0.000|
+DBUS<13>    |    3.959(F)|   -0.513(F)|IR_R_BUFGP        |   0.000|
+DBUS<14>    |    3.939(F)|   -0.490(F)|IR_R_BUFGP        |   0.000|
+DBUS<15>    |    3.961(F)|   -0.516(F)|IR_R_BUFGP        |   0.000|
+RD_O        |    6.045(R)|    1.069(R)|IR_R_BUFGP        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock WR_O
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+AD_O<0>     |    1.158(F)|    0.406(F)|WR_O_BUFGP        |   0.000|
+AD_O<1>     |    1.153(F)|    0.411(F)|WR_O_BUFGP        |   0.000|
+AD_O<2>     |    2.170(F)|   -0.404(F)|WR_O_BUFGP        |   0.000|
+AD_O<3>     |    1.142(F)|    0.424(F)|WR_O_BUFGP        |   0.000|
+AD_O<4>     |    1.095(F)|    0.458(F)|WR_O_BUFGP        |   0.000|
+AD_O<5>     |    2.053(F)|   -0.312(F)|WR_O_BUFGP        |   0.000|
+AD_O<6>     |    1.723(F)|   -0.050(F)|WR_O_BUFGP        |   0.000|
+AD_O<7>     |    1.648(F)|    0.012(F)|WR_O_BUFGP        |   0.000|
+AD_O<8>     |    1.990(F)|   -0.269(F)|WR_O_BUFGP        |   0.000|
+AD_O<9>     |    1.521(F)|    0.121(F)|WR_O_BUFGP        |   0.000|
+AD_O<10>    |    1.350(F)|    0.250(F)|WR_O_BUFGP        |   0.000|
+AD_O<11>    |    2.923(F)|   -1.009(F)|WR_O_BUFGP        |   0.000|
+AD_O<12>    |    3.649(F)|   -1.590(F)|WR_O_BUFGP        |   0.000|
+AD_O<13>    |    1.694(F)|   -0.023(F)|WR_O_BUFGP        |   0.000|
+AD_O<14>    |    1.677(F)|   -0.010(F)|WR_O_BUFGP        |   0.000|
+AD_O<15>    |    1.175(F)|    0.392(F)|WR_O_BUFGP        |   0.000|
+PC_O<0>     |    1.173(F)|    0.394(F)|WR_O_BUFGP        |   0.000|
+PC_O<1>     |    1.280(F)|    0.309(F)|WR_O_BUFGP        |   0.000|
+PC_O<2>     |    2.271(F)|   -0.486(F)|WR_O_BUFGP        |   0.000|
+PC_O<3>     |    1.637(F)|    0.028(F)|WR_O_BUFGP        |   0.000|
+PC_O<4>     |    1.173(F)|    0.395(F)|WR_O_BUFGP        |   0.000|
+PC_O<5>     |    1.307(F)|    0.285(F)|WR_O_BUFGP        |   0.000|
+PC_O<6>     |    1.226(F)|    0.348(F)|WR_O_BUFGP        |   0.000|
+PC_O<7>     |    1.443(F)|    0.175(F)|WR_O_BUFGP        |   0.000|
+PC_O<8>     |    1.725(F)|   -0.057(F)|WR_O_BUFGP        |   0.000|
+PC_O<9>     |    1.546(F)|    0.101(F)|WR_O_BUFGP        |   0.000|
+PC_O<10>    |    1.407(F)|    0.204(F)|WR_O_BUFGP        |   0.000|
+PC_O<11>    |    3.991(F)|   -1.863(F)|WR_O_BUFGP        |   0.000|
+PC_O<12>    |    3.031(F)|   -1.096(F)|WR_O_BUFGP        |   0.000|
+PC_O<13>    |    1.236(F)|    0.343(F)|WR_O_BUFGP        |   0.000|
+PC_O<14>    |    1.437(F)|    0.182(F)|WR_O_BUFGP        |   0.000|
+PC_O<15>    |    1.226(F)|    0.351(F)|WR_O_BUFGP        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock IR_R to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+DT_I<0>     |    6.190(R)|IR_R_BUFGP        |   0.000|
+DT_I<1>     |    7.644(R)|IR_R_BUFGP        |   0.000|
+DT_I<2>     |    8.021(R)|IR_R_BUFGP        |   0.000|
+DT_I<3>     |    7.940(R)|IR_R_BUFGP        |   0.000|
+DT_I<4>     |    7.659(R)|IR_R_BUFGP        |   0.000|
+DT_I<5>     |    8.579(R)|IR_R_BUFGP        |   0.000|
+DT_I<6>     |    7.662(R)|IR_R_BUFGP        |   0.000|
+DT_I<7>     |    7.645(R)|IR_R_BUFGP        |   0.000|
+IR_I<0>     |    6.190(F)|IR_R_BUFGP        |   0.000|
+IR_I<1>     |    6.186(F)|IR_R_BUFGP        |   0.000|
+IR_I<2>     |    6.193(F)|IR_R_BUFGP        |   0.000|
+IR_I<3>     |    6.170(F)|IR_R_BUFGP        |   0.000|
+IR_I<4>     |    6.177(F)|IR_R_BUFGP        |   0.000|
+IR_I<5>     |    6.194(F)|IR_R_BUFGP        |   0.000|
+IR_I<6>     |    6.160(F)|IR_R_BUFGP        |   0.000|
+IR_I<7>     |    6.168(F)|IR_R_BUFGP        |   0.000|
+IR_I<8>     |    9.907(F)|IR_R_BUFGP        |   0.000|
+IR_I<9>     |    7.654(F)|IR_R_BUFGP        |   0.000|
+IR_I<10>    |    7.902(F)|IR_R_BUFGP        |   0.000|
+IR_I<11>    |    7.915(F)|IR_R_BUFGP        |   0.000|
+IR_I<12>    |    7.915(F)|IR_R_BUFGP        |   0.000|
+IR_I<13>    |    7.650(F)|IR_R_BUFGP        |   0.000|
+IR_I<14>    |    8.212(F)|IR_R_BUFGP        |   0.000|
+IR_I<15>    |    7.642(F)|IR_R_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
+Clock WR_O to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ABUS<0>     |    6.174(F)|WR_O_BUFGP        |   0.000|
+ABUS<1>     |    6.177(F)|WR_O_BUFGP        |   0.000|
+ABUS<2>     |    6.174(F)|WR_O_BUFGP        |   0.000|
+ABUS<3>     |    6.195(F)|WR_O_BUFGP        |   0.000|
+ABUS<4>     |    6.177(F)|WR_O_BUFGP        |   0.000|
+ABUS<5>     |    6.170(F)|WR_O_BUFGP        |   0.000|
+ABUS<6>     |    6.160(F)|WR_O_BUFGP        |   0.000|
+ABUS<7>     |    6.170(F)|WR_O_BUFGP        |   0.000|
+ABUS<8>     |    6.147(F)|WR_O_BUFGP        |   0.000|
+ABUS<9>     |    6.195(F)|WR_O_BUFGP        |   0.000|
+ABUS<10>    |    6.168(F)|WR_O_BUFGP        |   0.000|
+ABUS<11>    |    6.166(F)|WR_O_BUFGP        |   0.000|
+ABUS<12>    |    6.168(F)|WR_O_BUFGP        |   0.000|
+ABUS<13>    |    6.172(F)|WR_O_BUFGP        |   0.000|
+ABUS<14>    |    6.174(F)|WR_O_BUFGP        |   0.000|
+ABUS<15>    |    6.174(F)|WR_O_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock WR_O
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IR_R           |         |         |   10.344|   10.344|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+DT_O<0>        |DBUS<0>        |    4.837|
+DT_O<1>        |DBUS<1>        |    7.264|
+DT_O<2>        |DBUS<2>        |    5.047|
+DT_O<3>        |DBUS<3>        |    7.544|
+DT_O<4>        |DBUS<4>        |    6.401|
+DT_O<5>        |DBUS<5>        |    6.771|
+DT_O<6>        |DBUS<6>        |    4.818|
+DT_O<7>        |DBUS<7>        |    7.482|
+IR_R           |DBUS<0>        |   15.386|
+IR_R           |DBUS<1>        |   18.037|
+IR_R           |DBUS<2>        |   19.060|
+IR_R           |DBUS<3>        |   22.806|
+IR_R           |DBUS<4>        |   23.047|
+IR_R           |DBUS<5>        |   20.123|
+IR_R           |DBUS<6>        |   20.408|
+IR_R           |DBUS<7>        |   21.121|
+IR_R           |DBUS<8>        |   17.024|
+IR_R           |DBUS<9>        |   22.137|
+IR_R           |DBUS<10>       |   23.910|
+IR_R           |DBUS<11>       |   21.876|
+IR_R           |DBUS<12>       |   23.887|
+IR_R           |DBUS<13>       |   22.383|
+IR_R           |DBUS<14>       |   19.306|
+IR_R           |DBUS<15>       |   16.244|
+IR_R           |nBHE           |   13.934|
+IR_R           |nBLE           |   14.193|
+IR_R           |nMERQ          |   14.459|
+IR_R           |nRD            |    9.014|
+IR_R           |nWR            |   13.989|
+RD_O           |DBUS<0>        |   11.915|
+RD_O           |DBUS<1>        |   14.566|
+RD_O           |DBUS<2>        |   15.589|
+RD_O           |DBUS<3>        |   19.335|
+RD_O           |DBUS<4>        |   19.576|
+RD_O           |DBUS<5>        |   16.652|
+RD_O           |DBUS<6>        |   16.937|
+RD_O           |DBUS<7>        |   17.650|
+RD_O           |DBUS<8>        |   13.553|
+RD_O           |DBUS<9>        |   18.666|
+RD_O           |DBUS<10>       |   20.439|
+RD_O           |DBUS<11>       |   18.405|
+RD_O           |DBUS<12>       |   20.416|
+RD_O           |DBUS<13>       |   18.912|
+RD_O           |DBUS<14>       |   15.835|
+RD_O           |DBUS<15>       |   12.773|
+RD_O           |nBHE           |   10.523|
+RD_O           |nBLE           |   10.782|
+RD_O           |nMERQ          |   11.048|
+RD_O           |nRD            |   12.635|
+RD_O           |nWR            |   10.518|
+WR_O           |DBUS<0>        |   12.260|
+WR_O           |DBUS<1>        |   14.911|
+WR_O           |DBUS<2>        |   15.934|
+WR_O           |DBUS<3>        |   19.680|
+WR_O           |DBUS<4>        |   19.921|
+WR_O           |DBUS<5>        |   16.997|
+WR_O           |DBUS<6>        |   17.282|
+WR_O           |DBUS<7>        |   17.995|
+WR_O           |DBUS<8>        |   13.898|
+WR_O           |DBUS<9>        |   19.011|
+WR_O           |DBUS<10>       |   20.784|
+WR_O           |DBUS<11>       |   18.750|
+WR_O           |DBUS<12>       |   20.761|
+WR_O           |DBUS<13>       |   19.257|
+WR_O           |DBUS<14>       |   16.180|
+WR_O           |DBUS<15>       |   13.118|
+WR_O           |nBHE           |   10.873|
+WR_O           |nBLE           |   11.132|
+WR_O           |nMERQ          |   11.398|
+WR_O           |nWR            |   10.863|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Nov 23 20:42:12 2013
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 132 MB
+
+
+

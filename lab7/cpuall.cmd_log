@@ -1,0 +1,289 @@
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/Xilinx91i/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+ngdbuild -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/Xilinx91i/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/Xilinx91i/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+xst -ise "C:/lab7/lab7.ise" -intstyle ise -ifn cpuall.xst -ofn cpuall.syr
+ngdbuild -ise "C:/lab7/lab7.ise" -intstyle ise -dd _ngo -nt timestamp -uc "cpuall.ucf" -p xc3s500e-pq208-4 "cpuall.ngc" cpuall.ngd
+map -ise "C:/lab7/lab7.ise" -intstyle ise -p xc3s500e-pq208-4 -cm area -pr b -k 4 -c 100 -o cpuall_map.ncd cpuall.ngd cpuall.pcf
+par -ise "C:/lab7/lab7.ise" -w -intstyle ise -ol std -t 1 cpuall_map.ncd cpuall.ncd cpuall.pcf
+trce -ise "C:/lab7/lab7.ise" -intstyle ise -e 3 -s 4 -xml cpuall cpuall.ncd -o cpuall.twr cpuall.pcf -ucf cpuall.ucf
+bitgen -ise "C:/lab7/lab7.ise" -intstyle ise -f cpuall.ut cpuall.ncd

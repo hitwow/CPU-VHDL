@@ -1,0 +1,3 @@
+MODULE w_clockblock
+SUBMODULE clkblock
+INSTANCE UUT

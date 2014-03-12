@@ -1,0 +1,3 @@
+vhdl work "rewblock.vhd"
+verilog work "w_rewblock.tfw"
+verilog work "C:/Xilinx91i/verilog/src/glbl.v"

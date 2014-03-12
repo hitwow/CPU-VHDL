@@ -1,0 +1,189 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.1i
+--  \   \         Application : ISE
+--  /   /         Filename : w_ifblock.ant
+-- /___/   /\     Timestamp : Sat Nov 23 20:02:49 2013
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: w_ifblock
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY w_ifblock IS
+END w_ifblock;
+
+ARCHITECTURE testbench_arch OF w_ifblock IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "C:\Xilinx91i\lab7\w_ifblock.ano";
+
+    COMPONENT ifblock
+        PORT (
+            c1 : In std_logic;
+            c2 : In std_logic;
+            PC_O : Out std_logic_vector (15 DownTo 0);
+            IR_I : In std_logic_vector (15 DownTo 0);
+            IR_O : Out std_logic_vector (15 DownTo 0);
+            PC_C : In std_logic;
+            PC_I : In std_logic_vector (15 DownTo 0);
+            IR_R : Out std_logic;
+            reset : In std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL c1 : std_logic := '0';
+    SIGNAL c2 : std_logic := '0';
+    SIGNAL PC_O : std_logic_vector (15 DownTo 0) := "0000000000000000";
+    SIGNAL IR_I : std_logic_vector (15 DownTo 0) := "0000000000000000";
+    SIGNAL IR_O : std_logic_vector (15 DownTo 0) := "0000000000000000";
+    SIGNAL PC_C : std_logic := '0';
+    SIGNAL PC_I : std_logic_vector (15 DownTo 0) := "0000000000000000";
+    SIGNAL IR_R : std_logic := '0';
+    SIGNAL reset : std_logic := '1';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : ifblock
+        PORT MAP (
+            c1 => c1,
+            c2 => c2,
+            PC_O => PC_O,
+            IR_I => IR_I,
+            IR_O => IR_O,
+            PC_C => PC_C,
+            PC_I => PC_I,
+            IR_R => IR_R,
+            reset => reset
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_PC_O(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", PC_O, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, PC_O);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_IR_O(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", IR_O, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, IR_O);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_IR_R(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", IR_R, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, IR_R);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_PC_O(0);
+            ANNOTATE_IR_O(0);
+            ANNOTATE_IR_R(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_PC_O(TX_TIME);
+                ANNOTATE_IR_O(TX_TIME);
+                ANNOTATE_IR_R(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                reset <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  200ns
+                WAIT FOR 100 ns;
+                c1 <= '1';
+                IR_I <= "0000000000000001";
+                -- -------------------------------------
+                -- -------------  Current Time:  300ns
+                WAIT FOR 100 ns;
+                c1 <= '0';
+                c2 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  400ns
+                WAIT FOR 100 ns;
+                c2 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  600ns
+                WAIT FOR 200 ns;
+                PC_C <= '1';
+                PC_I <= "0000000000000010";
+                -- -------------------------------------
+                -- -------------  Current Time:  700ns
+                WAIT FOR 100 ns;
+                PC_C <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  900ns
+                WAIT FOR 200 ns;
+                c1 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  1000ns
+                WAIT FOR 100 ns;
+                c1 <= '0';
+                c2 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  1100ns
+                WAIT FOR 100 ns;
+                c2 <= '0';
+                WAIT FOR 8900 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

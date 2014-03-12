@@ -1,0 +1,3 @@
+vhdl work "alublock.vhd"
+verilog work "w_alublock.tfw"
+verilog work "C:/Xilinx91i/verilog/src/glbl.v"

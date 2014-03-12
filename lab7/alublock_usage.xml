@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="63">
+<DesignStatistics TimeStamp="Sat Nov 23 20:08:51 2013"><group name="MiscellaneousStatistics">
+<item name="AVG_LUT_FAN_IN" rev="63">
+<attrib name="value" value="3.234700"/></item>
+<item name="AVG_SIG_FANOUT" rev="63">
+<attrib name="value" value="1.800000"/></item>
+<item name="LUT" rev="63">
+<attrib name="value" value="294"/></item>
+<item name="MAX_SIG_FANOUT" rev="63">
+<attrib name="value" value="16"/></item>
+<item name="PK_NUM_4_INPUT_LUTS" rev="63">
+<attrib name="value" value="294"/></item>
+<item name="PK_NUM_4_INPUT_LUT_RTS" rev="63">
+<attrib name="value" value="8"/></item>
+<item name="PK_NUM_BONDED_IOBS" rev="63">
+<attrib name="value" value="72"/></item>
+<item name="PK_NUM_CYINIT" rev="63">
+<attrib name="value" value="30"/></item>
+<item name="PK_NUM_CYMUX" rev="63">
+<attrib name="value" value="54"/></item>
+<item name="PK_NUM_EQUIV_GATES" rev="63">
+<attrib name="value" value="2"/></item>
+<item name="PK_NUM_IOB_LATS" rev="63">
+<attrib name="value" value="17"/></item>
+<item name="PK_NUM_JTAG_GATES" rev="63">
+<attrib name="value" value="72"/></item>
+<item name="PK_NUM_LUTLESS_IOB_LATS" rev="63">
+<attrib name="value" value="17"/></item>
+<item name="PK_NUM_LUTLESS_SLICE_LATS" rev="63">
+<attrib name="value" value="65"/></item>
+<item name="PK_NUM_MUXF5" rev="63">
+<attrib name="value" value="48"/></item>
+<item name="PK_NUM_MUXF6" rev="63">
+<attrib name="value" value="16"/></item>
+<item name="PK_NUM_MUXFS" rev="63">
+<attrib name="value" value="64"/></item>
+<item name="PK_NUM_SLICELS" rev="63">
+<attrib name="value" value="185"/></item>
+<item name="PK_NUM_SLICES" rev="63">
+<attrib name="value" value="185"/></item>
+<item name="PK_NUM_SLICE_LATS" rev="63">
+<attrib name="value" value="65"/></item>
+<item name="PK_NUM_XBZ_GCLKS" rev="63">
+<attrib name="value" value="2"/></item>
+<item name="PK_NUM_XOR" rev="63">
+<attrib name="value" value="56"/></item>
+<item name="SINGLE_LOAD_SIG" rev="63">
+<attrib name="value" value="217"/></item>
+<item name="TWO_LOAD_SIG" rev="63">
+<attrib name="value" value="55"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

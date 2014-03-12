@@ -1,0 +1,6 @@
+V3 3
+FL $XILINX/lab7/stblock.vhd 2013/11/20.15:24:40 J.30
+EN isim_temp/stblock 1384941080 FL $XILINX/lab7/stblock.vhd PB ieee/std_logic_1164 1164799246 \
+      PB ieee/std_logic_arith 1164799248 PB ieee/STD_LOGIC_UNSIGNED 1164799254
+AR isim_temp/stblock/Behavioral 1384941081 \
+      FL $XILINX/lab7/stblock.vhd EN isim_temp/stblock 1384941080

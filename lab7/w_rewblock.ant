@@ -1,0 +1,269 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.1i
+--  \   \         Application : ISE
+--  /   /         Filename : w_rewblock.ant
+-- /___/   /\     Timestamp : Mon Nov 25 20:00:28 2013
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: w_rewblock
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY w_rewblock IS
+END w_rewblock;
+
+ARCHITECTURE testbench_arch OF w_rewblock IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "C:\Xilinx91i\lab7\w_rewblock.ano";
+
+    COMPONENT rewblock
+        PORT (
+            c4 : In std_logic;
+            reset : In std_logic;
+            IR_O : In std_logic_vector (15 DownTo 0);
+            aluout : In std_logic_vector (7 DownTo 0);
+            Reg_O : In std_logic_vector (7 DownTo 0);
+            AD_O : In std_logic_vector (15 DownTo 0);
+            Z : In std_logic;
+            Cy : In std_logic;
+            Reg_N : Out std_logic_vector (2 DownTo 0);
+            Reg_C : Out std_logic;
+            Reg_I : Out std_logic_vector (7 DownTo 0);
+            PC_C : Out std_logic;
+            PC_I : Out std_logic_vector (15 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL c4 : std_logic := '0';
+    SIGNAL reset : std_logic := '1';
+    SIGNAL IR_O : std_logic_vector (15 DownTo 0) := "0000000000000000";
+    SIGNAL aluout : std_logic_vector (7 DownTo 0) := "00000000";
+    SIGNAL Reg_O : std_logic_vector (7 DownTo 0) := "00000000";
+    SIGNAL AD_O : std_logic_vector (15 DownTo 0) := "0000000000000000";
+    SIGNAL Z : std_logic := '0';
+    SIGNAL Cy : std_logic := '0';
+    SIGNAL Reg_N : std_logic_vector (2 DownTo 0) := "000";
+    SIGNAL Reg_C : std_logic := '0';
+    SIGNAL Reg_I : std_logic_vector (7 DownTo 0) := "00000000";
+    SIGNAL PC_C : std_logic := '0';
+    SIGNAL PC_I : std_logic_vector (15 DownTo 0) := "0000000000000000";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : rewblock
+        PORT MAP (
+            c4 => c4,
+            reset => reset,
+            IR_O => IR_O,
+            aluout => aluout,
+            Reg_O => Reg_O,
+            AD_O => AD_O,
+            Z => Z,
+            Cy => Cy,
+            Reg_N => Reg_N,
+            Reg_C => Reg_C,
+            Reg_I => Reg_I,
+            PC_C => PC_C,
+            PC_I => PC_I
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_Reg_N(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Reg_N, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Reg_N);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_Reg_C(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Reg_C, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Reg_C);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_Reg_I(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Reg_I, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Reg_I);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_PC_C(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", PC_C, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, PC_C);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_PC_I(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", PC_I, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, PC_I);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_Reg_N(0);
+            ANNOTATE_Reg_C(0);
+            ANNOTATE_Reg_I(0);
+            ANNOTATE_PC_C(0);
+            ANNOTATE_PC_I(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_Reg_N(TX_TIME);
+                ANNOTATE_Reg_C(TX_TIME);
+                ANNOTATE_Reg_I(TX_TIME);
+                ANNOTATE_PC_C(TX_TIME);
+                ANNOTATE_PC_I(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                reset <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  200ns
+                WAIT FOR 100 ns;
+                c4 <= '1';
+                IR_O <= "0000000100000000";
+                aluout <= "00000010";
+                -- -------------------------------------
+                -- -------------  Current Time:  300ns
+                WAIT FOR 100 ns;
+                c4 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  400ns
+                WAIT FOR 100 ns;
+                c4 <= '1';
+                IR_O <= "0001001100000000";
+                Reg_O <= "00000100";
+                -- -------------------------------------
+                -- -------------  Current Time:  500ns
+                WAIT FOR 100 ns;
+                c4 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  600ns
+                WAIT FOR 100 ns;
+                c4 <= '1';
+                AD_O <= "0000000000000101";
+                IR_O <= "1000000000000000";
+                -- -------------------------------------
+                -- -------------  Current Time:  700ns
+                WAIT FOR 100 ns;
+                c4 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  800ns
+                WAIT FOR 100 ns;
+                c4 <= '1';
+                AD_O <= "0000000000000110";
+                IR_O <= "1000100000000000";
+                -- -------------------------------------
+                -- -------------  Current Time:  900ns
+                WAIT FOR 100 ns;
+                c4 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  1000ns
+                WAIT FOR 100 ns;
+                c4 <= '1';
+                Z <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  1100ns
+                WAIT FOR 100 ns;
+                c4 <= '0';
+                Z <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  1200ns
+                WAIT FOR 100 ns;
+                c4 <= '1';
+                AD_O <= "0000000000000111";
+                IR_O <= "1001000000000000";
+                -- -------------------------------------
+                -- -------------  Current Time:  1300ns
+                WAIT FOR 100 ns;
+                c4 <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  1400ns
+                WAIT FOR 100 ns;
+                c4 <= '1';
+                Cy <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  1500ns
+                WAIT FOR 100 ns;
+                c4 <= '0';
+                Cy <= '0';
+                WAIT FOR 8500 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

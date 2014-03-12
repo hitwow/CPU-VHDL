@@ -1,0 +1,3 @@
+MODULE w_ifblock
+SUBMODULE ifblock
+INSTANCE UUT

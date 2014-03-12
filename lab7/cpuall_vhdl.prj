@@ -1,0 +1,7 @@
+vhdl work "C:\lab7\stctrblock.vhd"
+vhdl work "C:\lab7\stblock.vhd"
+vhdl work "C:\lab7\rewblock.vhd"
+vhdl work "C:\lab7\ifblock.vhd"
+vhdl work "C:\lab7\clkblock.vhd"
+vhdl work "C:\lab7\alublock.vhd"
+vhdl work "C:\lab7\cpuall.vhd"
